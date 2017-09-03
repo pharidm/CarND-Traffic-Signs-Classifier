@@ -11,19 +11,19 @@ Steps
 * Analyze the softmax probabilities of the new images
 * Summarize the results with a written report
 
+Images and Results
 
-[//]: # (Image References)
-
-[image1]: ./examples/visualization.jpg "Visualization"
+Visualization of the Dataset one Image from each Class:
 <img width="527" alt="image_first_in_class" src="https://user-images.githubusercontent.com/28680734/29999787-0497ebcc-900a-11e7-84c0-f57db4b57a9b.png">
 
-[image2]: ./examples/grayscale.jpg "Grayscaling"
-[image3]: ./examples/random_noise.jpg "Random Noise"
-[image4]: ./examples/placeholder.png "Traffic Sign 1"
-[image5]: ./examples/placeholder.png "Traffic Sign 2"
-[image6]: ./examples/placeholder.png "Traffic Sign 3"
-[image7]: ./examples/placeholder.png "Traffic Sign 4"
-[image8]: ./examples/placeholder.png "Traffic Sign 5"
+Distribution of Training Set Data
+<img width="435" alt="image_distribution_training_set" src="https://user-images.githubusercontent.com/28680734/29999811-c17c90c6-900a-11e7-8c8e-bf32c869cb51.png">
+
+Test Images
+<img width="514" alt="image_test" src="https://user-images.githubusercontent.com/28680734/29999822-4e67866c-900b-11e7-9686-561499d865cd.png">
+
+Predicited Signs
+<img width="851" alt="image_predicted_sign" src="https://user-images.githubusercontent.com/28680734/29999835-d0937790-900b-11e7-9595-4359bbf42601.png">
 
 ## Rubric Points
 ###Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.
