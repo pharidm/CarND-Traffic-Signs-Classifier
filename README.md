@@ -72,16 +72,17 @@ Distribution of Training Set Data
 <img width="500" alt="pre_post_processing" src="https://user-images.githubusercontent.com/28680734/30006677-89e6d916-90b2-11e7-8e9f-22cbc8e6d46c.png">
 </p>
 
-####2. My final model was built using the Lenet Architecture.  It consists of the following layers:
+#### 2. My final model was built using the Lenet Architecture.  It consists of the following layers:
 
 | Layer         		|     Description	        					|
 |:---------------------:|:---------------------------------------------:|
 | Input         		| 32x32x1 Gray scale image   							|
 | Convolution 3x3     	| 1x1 stride, same padding, outputs 28x28x6 	|
-| RELU					|												|
+| RELU					|												
 | Max pooling	      	| 2x2 stride,  outputs 14x14x6 				|
 | Convolution 3x3	|1x1 stride,  outputs 10x10x16       									|
-| RELU			|                								| Convolution 3x3     	| 2x2 stride, same padding, outputs 5x5x16 	|
+| RELU			|                								
+| Convolution 3x3     	| 2x2 stride, same padding, outputs 5x5x16 	|
 | Flatten 		| output 400
 | Fully Connected        | output 120
 | RELU Fully Connected|
