@@ -64,31 +64,32 @@ Distribution of Training Set Data
 * Step 3: Each image was then normalized in order to help our model reach convergence; the point where our predictions and return the lowest error possible. Since all the values are operating on the same scale our model should return the results faster. Min, Max scaling was employed on the gray scaled image.  The image below shows the results of our Training, Validation and Test dataset pre and post normalization. The function defined to normalize the data is below as well. Numpy Newaxis was used to reduce the dimensions of the data for use in a Tensor. 
 
 <p align="center">
-<img width="500" alt="dcddd" src="https://user-images.githubusercontent.com/28680734/30006642-be991f94-90b1-11e7-9e7e-9cb245defc4f.png">
+<img width="500" alt="normalization_function" src="https://user-images.githubusercontent.com/28680734/30006642-be991f94-90b1-11e7-9e7e-9cb245defc4f.png">
 </p>
 
 
 <p align="center">
-<img width="500" alt="dcsdcsd" src="https://user-images.githubusercontent.com/28680734/30006677-89e6d916-90b2-11e7-8e9f-22cbc8e6d46c.png">
+<img width="500" alt="pre_post_processing" src="https://user-images.githubusercontent.com/28680734/30006677-89e6d916-90b2-11e7-8e9f-22cbc8e6d46c.png">
 </p>
 
-
-####2. Describe what your final model architecture looks like including model type, layers, layer sizes, connectivity, etc.) Consider including a diagram and/or table describing the final model.
-
-My final model consisted of the following layers:
+####2. My final model was built using the Lenet Architecture.  It consists of the following layers:
 
 | Layer         		|     Description	        					|
 |:---------------------:|:---------------------------------------------:|
-| Input         		| 32x32x3 RGB image   							|
-| Convolution 3x3     	| 1x1 stride, same padding, outputs 32x32x64 	|
+| Input         		| 32x32x1 Gray scale image   							|
+| Convolution 3x3     	| 1x1 stride, same padding, outputs 28x28x6 	|
 | RELU					|												|
-| Max pooling	      	| 2x2 stride,  outputs 16x16x64 				|
-| Convolution 3x3	    | etc.      									|
-| Fully connected		| etc.        									|
-| Softmax				| etc.        									|
-|						|												|
-|						|												|
+| Max pooling	      	| 2x2 stride,  outputs 14x14x6 				|
+| Convolution 3x3	|1x1 stride,  outputs 10x10x16       									|
+| RELU			|                								| Convolution 3x3     	| 2x2 stride, same padding, outputs 5x5x16 	|
+| Flatten 		| output 400
+| Fully Connected        | output 120
+| RELU Fully Connected|
+| Fully Connected        | output 84
+| RELU Fully Connected
+| Fully Connected        | output 43
 
+Improvements to this architecuture would have been to employ googlenet, but do to time contraints it was not considered.  Using Googlenet would have returned a high accuracy much faster than using 20 EPOCHs.
 
 
 ####3. Describe how you trained your model. The discussion can include the type of optimizer, the batch size, number of epochs and any hyperparameters such as learning rate.
