@@ -15,6 +15,8 @@ Steps
 [//]: # (Image References)
 
 [image1]: ./examples/visualization.jpg "Visualization"
+<img width="527" alt="image_first_in_class" src="https://user-images.githubusercontent.com/28680734/29999787-0497ebcc-900a-11e7-84c0-f57db4b57a9b.png">
+
 [image2]: ./examples/grayscale.jpg "Grayscaling"
 [image3]: ./examples/random_noise.jpg "Random Noise"
 [image4]: ./examples/placeholder.png "Traffic Sign 1"
