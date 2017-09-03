@@ -42,13 +42,13 @@ signs data set:
 
 * Number of training examples is 34799.
 * The size of the validation set is 4410. 
-* Number of testing examples = 12630.
-* The shape of a traffic sign image is (32, 32, 3)
-* The number of unique classes/labels in the data set is 43
+* Number of testing examples is 12630.
+* The shape of a traffic sign image is (32, 32, 3).  32 pixels by 32 pixels, with the third value representing 3 channels for a color image. 
+* The number of unique classes/labels in the data set is 43.
 
 #### 2. Include an exploratory visualization of the dataset.
 
-Here is an exploratory visualization of the data set. It is a bar chart showing the distribution of the Training Data Set by class.  It also shows the min number of images per class and the maximum number of images per class.  
+Here is an exploratory visualization of the data set. It is a bar chart showing the distribution of the Training Data Set by class.  It also shows the minimum number of images per class and the maximum number of images per class.  
 
 Distribution of Training Set Data
 <p align="center">
@@ -59,10 +59,18 @@ Distribution of Training Set Data
 
 #### 1. Preprocessing the image included the following steps
 * Step 1: The Training set was shuffled to improve the accuracy results using sklearn.utils.shuffle 
-* Step 2: Each image was converted to gray scale in order to 
-* Step 3: Each image was then normalized with min, max scaling  
+* Step 2: Each image was converted to gray scale to minimize the variability do to the different quality of pictures and cameras.  In addition we can amplify the features that are most interesting to our classification model. Handling colored images involves a matrix for each of the three colors, making the demand for memory and computations even larger. 
 
-The difference between the original data set and the augmented data set is there is only on channel instead or 3 for color images. 
+* Step 3: Each image was then normalized in order to help our model reach convergence; the point where our predictions and return the lowest error possible. Since all the values are operating on the same scale our model should return the results faster. Min, Max scaling was employed on the gray scaled image.  The image below shows the results of our Training, Validation and Test dataset pre and post normalization. The function defined to normalize the data is below as well. Numpy Newaxis was used to reduce the dimensions of the data for use in a Tensor. 
+
+<p align="center">
+![def_normal](https://user-images.githubusercontent.com/28680734/30006642-be991f94-90b1-11e7-9e7e-9cb245defc4f.png)
+</p>
+
+
+<p align="center">
+![![normal2](https://user-images.githubusercontent.com/28680734/30006677-89e6d916-90b2-11e7-8e9f-22cbc8e6d46c.png)
+</p>
 
 
 ####2. Describe what your final model architecture looks like including model type, layers, layer sizes, connectivity, etc.) Consider including a diagram and/or table describing the final model.
