@@ -73,7 +73,7 @@ Distribution of Training Set Data
 </p>
 
 #### 2. My final model was built using the Lenet Architecture.   It consists of the following layers:
-<center>
+
 | Layer         		|     Description	        					    |
 |:---------------------:|:---------------------------------------------:|
 | Input         		| 32x32x1 Gray scale image   							|
@@ -89,7 +89,7 @@ Distribution of Training Set Data
 | RELU Fully Connected  |       |
 | Fully Connected        | output 43 |
 |Return Logits|           |
-</center>
+
 
 Improvements to this architecuture would have been to employ googlenet, but do to time contraints it was not considered.  Using Googlenet would have returned a high accuracy much faster than using 20 EPOCHs.
 
