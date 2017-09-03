@@ -31,11 +31,11 @@ Predicited Signs
 ## Rubric Points
 The writeup herein addresses the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.
 
-####here is a link to my [project code](https://github.com/pharidm/CarND-Traffic-Signs-Classifier/blob/master/Report_Traffic_Sign_Classifier.pdf)
+#### here is a link to my [project code](https://github.com/pharidm/CarND-Traffic-Signs-Classifier/blob/master/Report_Traffic_Sign_Classifier.pdf)
 
-###Data Set Summary & Exploration
+### Data Set Summary & Exploration
 
-####1. Provide a basic summary of the data set. The code and analysis uses python, numpy and/or pandas methods rather than hardcoding results manually.
+#### 1. Provide a basic summary of the data set. The code and analysis uses python, numpy and/or pandas methods rather than hardcoding results manually.
 
 I used the python and numpy library to calculate summary statistics of the traffic
 signs data set:
@@ -46,7 +46,7 @@ signs data set:
 * The shape of a traffic sign image is (32, 32, 3)
 * The number of unique classes/labels in the data set is 43
 
-####2. Include an exploratory visualization of the dataset.
+#### 2. Include an exploratory visualization of the dataset.
 
 Here is an exploratory visualization of the data set. It is a bar chart showing the distribution of the Training Data Set by class.  It also shows the min number of images per class and the maximum number of images per class.  
 
@@ -55,12 +55,12 @@ Distribution of Training Set Data
   <img width="500" alt="image_distribution_training_set" src="https://user-images.githubusercontent.com/28680734/29999811-c17c90c6-900a-11e7-8c8e-bf32c869cb51.png">
 </p>
 
-###Design and Test a Model Architecture
+### Design and Test a Model Architecture
 
-####1. Preprocessing the image included the following steps
-*Step 1: The Training set was shuffled to improve the accuracy results using sklearn.utils.shuffle 
-*Step 2: Each image was converted to gray scale in order to 
-*Step 3: Each image was then normalized with min, max scaling  
+#### 1. Preprocessing the image included the following steps
+* Step 1: The Training set was shuffled to improve the accuracy results using sklearn.utils.shuffle 
+* Step 2: Each image was converted to gray scale in order to 
+* Step 3: Each image was then normalized with min, max scaling  
 
 The difference between the original data set and the augmented data set is there is only on channel instead or 3 for color images. 
 
