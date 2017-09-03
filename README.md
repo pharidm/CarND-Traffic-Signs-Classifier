@@ -1,9 +1,6 @@
-# CarND-Traffic-Recognition
----
-
-Build a Traffic Sign Recognition Project
+# Build a Traffic Sign Recognition Project
 ## The goals / steps of this project are the following:
-* Using the tools discussed for deep convolutional neural networks develop pipeline to to classify traffic signs.
+* Using the tools discussed for deep convolutional neural networks develop a pipeline to to classify traffic signs.
 * Train and validate a model so it can classify traffic sign images using the German Traffic Sign Dataset
 
 Steps
