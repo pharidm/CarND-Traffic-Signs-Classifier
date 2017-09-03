@@ -14,7 +14,9 @@ Steps
 Images and Results
 
 Visualization of the Dataset one Image from each Class:
-<img width="527" alt="image_first_in_class" src="https://user-images.githubusercontent.com/28680734/29999787-0497ebcc-900a-11e7-84c0-f57db4b57a9b.png">
+<p align="center">
+<img width="500" alt="image_first_in_class" src="https://user-images.githubusercontent.com/28680734/29999787-0497ebcc-900a-11e7-84c0-f57db4b57a9b.png">
+</p>
 
 Distribution of Training Set Data
 <img width="435" alt="image_distribution_training_set" src="https://user-images.githubusercontent.com/28680734/29999811-c17c90c6-900a-11e7-8c8e-bf32c869cb51.png">
