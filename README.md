@@ -73,6 +73,7 @@ Distribution of Training Set Data
 </p>
 
 #### 2. My final model was built using the Lenet Architecture.   It consists of the following layers:
+<p align="center">
 
 | Layer         		|     Description	        					    |
 |:---------------------:|:---------------------------------------------:|
@@ -90,6 +91,7 @@ Distribution of Training Set Data
 | Fully Connected        | output 43 |
 |Return Logits|           |
 
+</p>
 
 Improvements to this architecuture would have been to employ googlenet, but do to time contraints it was not considered.  Using Googlenet would have returned a high accuracy much faster than using 20 EPOCHs.
 
