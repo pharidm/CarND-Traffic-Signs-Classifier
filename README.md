@@ -74,21 +74,21 @@ Distribution of Training Set Data
 
 #### 2. My final model was built using the Lenet Architecture.  It consists of the following layers:
 
-| Layer         		|     Description	        					|
-|:---------------------:|:---------------------------------------------:|
-| Input         		| 32x32x1 Gray scale image   							|
-| Convolution 3x3     	| 1x1 stride, same padding, outputs 28x28x6 	|
-| RELU					|												
-| Max pooling	      	| 2x2 stride,  outputs 14x14x6 				|
-| Convolution 3x3	|1x1 stride,  outputs 10x10x16       									|
-| RELU			|                								
-| Convolution 3x3     	| 2x2 stride, same padding, outputs 5x5x16 	|
-| Flatten 		| output 400
-| Fully Connected        | output 120
-| RELU Fully Connected|
-| Fully Connected        | output 84
-| RELU Fully Connected
-| Fully Connected        | output 43
+          | Layer         		|     Description	        					|
+          |:---------------------:|:---------------------------------------------:|
+          | Input         		| 32x32x1 Gray scale image   							|
+          | Convolution 3x3     	| 1x1 stride, same padding, outputs 28x28x6 	|
+          | RELU					|												
+          | Max pooling	      	| 2x2 stride,  outputs 14x14x6 				|
+          | Convolution 3x3	|1x1 stride,  outputs 10x10x16       									|
+          | RELU			|                								
+          | Convolution 3x3     	| 2x2 stride, same padding, outputs 5x5x16 	|
+          | Flatten 		| output 400
+          | Fully Connected        | output 120
+          | RELU Fully Connected|
+          | Fully Connected        | output 84
+          | RELU Fully Connected
+          | Fully Connected        | output 43
 
 Improvements to this architecuture would have been to employ googlenet, but do to time contraints it was not considered.  Using Googlenet would have returned a high accuracy much faster than using 20 EPOCHs.
 
