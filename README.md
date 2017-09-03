@@ -13,19 +13,25 @@ Steps
 
 Images and Results
 
-Visualization of the Dataset one Image from each Class:
+##Visualization of the Dataset one Image from each Class:
 <p align="center">
 <img width="500" alt="image_first_in_class" src="https://user-images.githubusercontent.com/28680734/29999787-0497ebcc-900a-11e7-84c0-f57db4b57a9b.png">
 </p>
 
 Distribution of Training Set Data
+<p align="center">
 <img width="435" alt="image_distribution_training_set" src="https://user-images.githubusercontent.com/28680734/29999811-c17c90c6-900a-11e7-8c8e-bf32c869cb51.png">
+</p>
 
 Test Images
+<p align="center">
 <img width="514" alt="image_test" src="https://user-images.githubusercontent.com/28680734/29999822-4e67866c-900b-11e7-9686-561499d865cd.png">
+</p>
 
 Predicited Signs
+<p align="center">
 <img width="851" alt="image_predicted_sign" src="https://user-images.githubusercontent.com/28680734/29999835-d0937790-900b-11e7-9595-4359bbf42601.png">
+</p>
 
 ## Rubric Points
 ###Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.
