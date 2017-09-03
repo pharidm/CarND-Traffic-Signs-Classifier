@@ -64,12 +64,12 @@ Distribution of Training Set Data
 * Step 3: Each image was then normalized in order to help our model reach convergence; the point where our predictions and return the lowest error possible. Since all the values are operating on the same scale our model should return the results faster. Min, Max scaling was employed on the gray scaled image.  The image below shows the results of our Training, Validation and Test dataset pre and post normalization. The function defined to normalize the data is below as well. Numpy Newaxis was used to reduce the dimensions of the data for use in a Tensor. 
 
 <p align="center">
-![def_normal](https://user-images.githubusercontent.com/28680734/30006642-be991f94-90b1-11e7-9e7e-9cb245defc4f.png)
+<img width="500" alt="dcddd" src="https://user-images.githubusercontent.com/28680734/30006642-be991f94-90b1-11e7-9e7e-9cb245defc4f.png">
 </p>
 
 
 <p align="center">
-![![normal2](https://user-images.githubusercontent.com/28680734/30006677-89e6d916-90b2-11e7-8e9f-22cbc8e6d46c.png)
+<img width="500" alt="dcsdcsd" src="https://user-images.githubusercontent.com/28680734/30006677-89e6d916-90b2-11e7-8e9f-22cbc8e6d46c.png">
 </p>
 
 
