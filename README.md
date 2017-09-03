@@ -1,6 +1,6 @@
 # Build a Traffic Sign Recognition Project
 ## The goals / steps of this project are the following:
-* Using the tools discussed for deep convolutional neural networks develop a pipeline to to classify traffic signs.
+* Using the tools discussed for Deep and Convolutional Neural Networks develop a pipeline to to classify traffic signs.
 * Train and validate a model so it can classify traffic sign images using the German Traffic Sign Dataset
 
 Steps
@@ -11,9 +11,9 @@ Steps
 * Analyze the softmax probabilities of the new images
 * Summarize the results with a written report
 
-Images and Results
+## Images and Results
 
-##Visualization of the Dataset one Image from each Class:
+### Visualization of the Dataset one Image from each Class:
 <p align="center">
   <img width="500" alt="image_first_in_class" src="https://user-images.githubusercontent.com/28680734/29999787-0497ebcc-900a-11e7-84c0-f57db4b57a9b.png">
 </p>
@@ -34,10 +34,7 @@ Predicited Signs
 </p>
 
 ## Rubric Points
-###Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.
-
----
-###Writeup / README
+Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.
 
 ####1. Provide a Writeup / README that includes all the rubric points and how you addressed each one. You can submit your writeup as markdown or pdf. You can use this template as a guide for writing the report. The submission includes the project code.
 
