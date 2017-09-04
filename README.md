@@ -33,9 +33,8 @@ The writeup herein addresses the [rubric points](https://review.udacity.com/#!/r
 
 #### here is a link to my [project code](https://github.com/pharidm/CarND-Traffic-Signs-Classifier/blob/master/Report_Traffic_Sign_Classifier.pdf)
 
-### Data Set Summary & Exploration
-
-#### 1. Provide a basic summary of the data set. The code and analysis uses python, numpy and/or pandas methods rather than hardcoding results manually.
+### 1.0  Data Set Summary & Exploration
+Provide a basic summary of the data set. The code and analysis uses python, numpy and/or pandas methods rather than hardcoding results manually.
 
 I used the python and numpy library to calculate summary statistics of the traffic
 signs data set:
@@ -46,7 +45,7 @@ signs data set:
 * The shape of a traffic sign image is (32, 32, 3).  32 pixels by 32 pixels, with the third value representing 3 channels for a color image. 
 * The number of unique classes/labels in the data set is 43.
 
-#### 2. Include an exploratory visualization of the dataset.
+#### 2.0 Exploratory visualization of the dataset.
 
 Here is an exploratory visualization of the data set. It is a bar chart showing the distribution of the Training Data Set by class.  It also shows the minimum number of images per class and the maximum number of images per class.  
 
@@ -55,12 +54,14 @@ Distribution of Training Set Data
   <img width="500" alt="image_distribution_training_set" src="https://user-images.githubusercontent.com/28680734/29999811-c17c90c6-900a-11e7-8c8e-bf32c869cb51.png">
 </p>
 
-### Design and Test a Model Architecture
+### 3.0 Design and Test a Model Architecture
 
-#### 1. Preprocessing the image included the following steps
+#### 3.1. Preprocessing the image included the following steps
+#### 3.1.1 Shuffle
 * Step 1: The Training set was shuffled to improve the accuracy results using sklearn.utils.shuffle 
+#### 3.1.2 Grayscale
 * Step 2: Each image was converted to gray scale to minimize the variability do to the different quality of pictures and cameras.  In addition we can amplify the features that are most interesting to our classification model. Handling colored images involves a matrix for each of the three colors, making the demand for memory and computations even larger. 
-
+#### 3.1.3 Normalization
 * Step 3: Each image was then normalized in order to help our model reach convergence; the point where our predictions return the lowest error possible. Since all the values are operating on the same scale our model should return the results faster. Min, Max scaling was employed on the gray scaled image.  The image below shows the results of our Training, Validation and Test dataset pre and post normalization. The function defined to normalize the data is below as well. Numpy Newaxis was used to reduce the dimensions of the data for use in a Tensor. 
 
 <p align="center">
@@ -72,7 +73,8 @@ Distribution of Training Set Data
 <img width="500" alt="pre_post_processing" src="https://user-images.githubusercontent.com/28680734/30006677-89e6d916-90b2-11e7-8e9f-22cbc8e6d46c.png">
 </p>
 
-#### 2. My final model was built using the LeNet-5 Architecture.   It consists of the following layers:
+#### 4. Final model 
+#### 4.1 My final was built using the LeNet-5 Architecture.   It consists of the following layers:
 <center>
 
 | Layer         		|     Description	        					    |
@@ -93,7 +95,7 @@ Distribution of Training Set Data
 
 </center>
 
-####  3. A iterative approach was used to train the model starting with the basic LeNet architecture. 
+####  4.2. A iterative approach was used to train the model starting with the basic LeNet architecture. 
 
 ADAM optimizer was picked a good starting point to update the model network weights.  Instead of the classical stochastic gradient descent procedure to update network weights iterative based in training data. “Adam combines the best properties of the AdaGrad and RMSProp algorithms to provide an optimization algorithm that can handle sparse gradients on noisy problems.” [Reference Jason Brownlee](https://machinelearningmastery.com/adam-optimization-algorithm-for-deep-learning/)
 
@@ -111,15 +113,15 @@ The key parameters of my model is as follows:
 * rate = 0.001
 * dropout = 0.5
 
-#### 4. Architecture Approach
+#### 5. Architecture Approach
 A iterative approach was used to train the model starting with the basic LeNet architecture. Improvements to this architecture would have been to employ GoogleNet, but due to time constraints it was not considered.  Using GoogleNet would have returned a high accuracy much faster than using 20 EPOCHs.  LeNet was choose because it was discussed in class to provide a good starting point and high level of accuracy without much modification.  Because we are implementing a classical vision system model on a text book case of traffic signs, our LeNet architecture performed well.  Moving on to none basic classification problems, or pictures of low quality might need a more improved model.  
 
-#### 4.1 My final model results were:
+#### 5.1 My final model results were:
 * Training set accuracy of 0.986
 * Validation set accuracy of 0.942
 * Test set accuracy of 0.933
 
-#### 4.2 Accuracy Assessment 
+#### 5.2 Architecture Accuracy Assessment 
 
 The Training set is used to to fit the parameters [i.e., weights]
 
@@ -129,11 +131,12 @@ The Test set is used to assess the performance i.e., generalization and predicti
 
 All three results showed a high degree of accuracy at the final 20th EPOCH over 0.93 % indicating our model is highly accurate. It took 10 EPOCH runs or more before the minimum accuracy appeared stable.
 
-### Test a Model on New Images
+### 6.0 Test a Model on New Images
 
-#### 1. Choose five German traffic signs found on the web and provide them in the report. For each image, discuss what quality or qualities might be difficult to classify.
+#### 6.1. Choose five German traffic signs found on the web and provide them in the report. For each image, discuss what quality or qualities might be difficult to classify.
 
 Here are five German traffic signs that I found on the web:
+![gts_image_4](https://user-images.githubusercontent.com/28680734/30037268-2be8a346-916e-11e7-8792-0f84ad5f7fae.jpg)
 
 ![alt text][image4] ![alt text][image5] ![alt text][image6]
 ![alt text][image7] ![alt text][image8]
