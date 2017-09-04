@@ -61,7 +61,7 @@ Distribution of Training Set Data
 * Step 1: The Training set was shuffled to improve the accuracy results using sklearn.utils.shuffle 
 * Step 2: Each image was converted to gray scale to minimize the variability do to the different quality of pictures and cameras.  In addition we can amplify the features that are most interesting to our classification model. Handling colored images involves a matrix for each of the three colors, making the demand for memory and computations even larger. 
 
-* Step 3: Each image was then normalized in order to help our model reach convergence; the point where our predictions and return the lowest error possible. Since all the values are operating on the same scale our model should return the results faster. Min, Max scaling was employed on the gray scaled image.  The image below shows the results of our Training, Validation and Test dataset pre and post normalization. The function defined to normalize the data is below as well. Numpy Newaxis was used to reduce the dimensions of the data for use in a Tensor. 
+* Step 3: Each image was then normalized in order to help our model reach convergence; the point where our predictions return the lowest error possible. Since all the values are operating on the same scale our model should return the results faster. Min, Max scaling was employed on the gray scaled image.  The image below shows the results of our Training, Validation and Test dataset pre and post normalization. The function defined to normalize the data is below as well. Numpy Newaxis was used to reduce the dimensions of the data for use in a Tensor. 
 
 <p align="center">
 <img width="500" alt="normalization_function" src="https://user-images.githubusercontent.com/28680734/30006642-be991f94-90b1-11e7-9e7e-9cb245defc4f.png">
@@ -72,7 +72,7 @@ Distribution of Training Set Data
 <img width="500" alt="pre_post_processing" src="https://user-images.githubusercontent.com/28680734/30006677-89e6d916-90b2-11e7-8e9f-22cbc8e6d46c.png">
 </p>
 
-#### 2. My final model was built using the Lenet Architecture.   It consists of the following layers:
+#### 2. My final model was built using the LeNet-5 Architecture.   It consists of the following layers:
 <center>
 
 | Layer         		|     Description	        					    |
@@ -93,14 +93,27 @@ Distribution of Training Set Data
 
 </center>
 
-Improvements to this architecuture would have been to employ googlenet, but do to time contraints it was not considered.  Using Googlenet would have returned a high accuracy much faster than using 20 EPOCHs.
+Improvements to this architecuture would have been to employ GoogleNet, but do to time contraints it was not considered.  Using Googlenet would have returned a high accuracy much faster than using 20 EPOCHs.
+
+####  3. A iterative approach was used to train the model starting with the basic LeNet architecture.  
+ADAM optimizer was picked a good starting point to update the model network weights.  Instead of the classical stochastic gradient descent procedure to update network weights iterative based in training data. “Adam combines the best properties of the AdaGrad and RMSProp algorithms to provide an optimization algorithm that can handle sparse gradients on noisy problems.” [Reference Jason Brownlee] (https://machinelearningmastery.com/adam-optimization-algorithm-for-deep-learning/)
+
+My model returned results close to the required 0.93 accuracy on the first run with 10-15 EPOCHs.  An EPOCK is a single forward and backward pass of the whole dataset. This is used to increase the accuracy of the model without requiring more data. I increased the EPOCHs and played with the learning rate and dropout.
+
+In order to prevent over fitting I employed a 50% dropout rate.  The key idea is to randomly drop units (along with their connections) from the neural network during training.  A learning rate of 0.001 was picked as it appears to be a “balanced” default value, were model should not overshoot nor converge too slowly.
+
+Reference: [A Simple Way to prevent Neural Networks from Overtraining] (http://www.jmlr.org/papers/volume15/srivastava14a/srivastava14a.pdf)
+
+The key parameters of my model is as follows:
+
+EPOCHS     = 20
+BATCH_SIZE = 128
+keep_prob  = tf.placeholder(tf.float32)
+rate = 0.001
+dropout = 0.5
 
 
-####3. Describe how you trained your model. The discussion can include the type of optimizer, the batch size, number of epochs and any hyperparameters such as learning rate.
-
-To train the model, I used an ....
-
-####4. Describe the approach taken for finding a solution and getting the validation set accuracy to be at least 0.93. Include in the discussion the results on the training, validation and test sets and where in the code these were calculated. Your approach may have been an iterative process, in which case, outline the steps you took to get to the final solution and why you chose those steps. Perhaps your solution involved an already well known implementation or architecture. In this case, discuss why you think the architecture is suitable for the current problem.
+####4. A interative approach was used to train the model starting with the basic LeNet architecutureDescribe the approach taken for finding a solution and getting the validation set accuracy to be at least 0.93. Include in the discussion the results on the training, validation and test sets and where in the code these were calculated. Your approach may have been an iterative process, in which case, outline the steps you took to get to the final solution and why you chose those steps. Perhaps your solution involved an already well known implementation or architecture. In this case, discuss why you think the architecture is suitable for the current problem.
 
 My final model results were:
 * training set accuracy of ?
