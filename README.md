@@ -95,13 +95,13 @@ Distribution of Training Set Data
 
 ####  3. A iterative approach was used to train the model starting with the basic LeNet architecture. 
 
-ADAM optimizer was picked a good starting point to update the model network weights.  Instead of the classical stochastic gradient descent procedure to update network weights iterative based in training data. “Adam combines the best properties of the AdaGrad and RMSProp algorithms to provide an optimization algorithm that can handle sparse gradients on noisy problems.” [Reference Jason Brownlee] (https://machinelearningmastery.com/adam-optimization-algorithm-for-deep-learning/)
+ADAM optimizer was picked a good starting point to update the model network weights.  Instead of the classical stochastic gradient descent procedure to update network weights iterative based in training data. “Adam combines the best properties of the AdaGrad and RMSProp algorithms to provide an optimization algorithm that can handle sparse gradients on noisy problems.” [Reference Jason Brownlee](https://machinelearningmastery.com/adam-optimization-algorithm-for-deep-learning/)
 
 My model returned results close to the required 0.93 accuracy on the first run with 10-15 EPOCHs.  An EPOCK is a single forward and backward pass of the whole dataset. This is used to increase the accuracy of the model without requiring more data. I increased the EPOCHs and played with the learning rate and dropout.
 
 In order to prevent over fitting I employed a 50% dropout rate.  The key idea is to randomly drop units (along with their connections) from the neural network during training.  A learning rate of 0.001 was picked as it appears to be a “balanced” default value, were model should not overshoot nor converge too slowly.
 
-Reference: [A Simple Way to prevent Neural Networks from Overtraining] (http://www.jmlr.org/papers/volume15/srivastava14a/srivastava14a.pdf)
+Reference: [A Simple Way to prevent Neural Networks from Overtraining](http://www.jmlr.org/papers/volume15/srivastava14a/srivastava14a.pdf)
 
 The key parameters of my model is as follows:
 
@@ -111,15 +111,15 @@ The key parameters of my model is as follows:
 * rate = 0.001
 * dropout = 0.5
 
-####4. Architecture Approach
+#### 4. Architecture Approach
 A iterative approach was used to train the model starting with the basic LeNet architecture. Improvements to this architecture would have been to employ GoogleNet, but due to time constraints it was not considered.  Using GoogleNet would have returned a high accuracy much faster than using 20 EPOCHs.  LeNet was choose because it was discussed in class to provide a good starting point and high level of accuracy without much modification.  Because we are implementing a classical vision system model on a text book case of traffic signs, our LeNet architecture performed well.  Moving on to none basic classification problems, or pictures of low quality might need a more improved model.  
 
-####4.1 My final model results were:
+#### 4.1 My final model results were:
 * Training set accuracy of 0.986
 * Validation set accuracy of 0.942
 * Test set accuracy of 0.933
 
-####4.2 Accuracy Assessment 
+#### 4.2 Accuracy Assessment 
 
 The Training set is used to to fit the parameters [i.e., weights]
 
@@ -129,9 +129,9 @@ The Test set is used to assess the performance i.e., generalization and predicti
 
 All three results showed a high degree of accuracy at the final 20th EPOCH over 0.93 % indicating our model is highly accurate. It took 10 EPOCH runs or more before the minimum accuracy appeared stable.
 
-###Test a Model on New Images
+### Test a Model on New Images
 
-####1. Choose five German traffic signs found on the web and provide them in the report. For each image, discuss what quality or qualities might be difficult to classify.
+#### 1. Choose five German traffic signs found on the web and provide them in the report. For each image, discuss what quality or qualities might be difficult to classify.
 
 Here are five German traffic signs that I found on the web:
 
