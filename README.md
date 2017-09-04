@@ -136,27 +136,37 @@ All three results showed a high degree of accuracy at the final 20th EPOCH over 
 #### 6.1. Choose five German traffic signs found on the web and provide them in the report. For each image, discuss what quality or qualities might be difficult to classify.
 
 Here are five German traffic signs that I found on the web:
-![gts_image_4](https://user-images.githubusercontent.com/28680734/30037268-2be8a346-916e-11e7-8792-0f84ad5f7fae.jpg)
+<p align="center">
+<img width="52" alt="Priority_Road" src= "https://user-images.githubusercontent.com/28680734/30037268-2be8a346-916e-11e7-8792-0f84ad5f7fae.jpg">
+</p>
+<p align="center">
+<img width="52" alt="Right of Wat at Next Intersection " src= "https://user-images.githubusercontent.com/28680734/30037358-e72d8180-916e-11e7-8f8f-bc36ebd92a16.jpg">
+</p>
+<p align="center">
+<img width="52" alt="General Caution" src= "https://user-images.githubusercontent.com/28680734/30037369-ff9aa2e8-916e-11e7-9202-355613afb97b.jpg">
+</p>
+<p align="center">
+<img width="52" alt="Left Turn Ahead" src= "https://user-images.githubusercontent.com/28680734/30037376-186d5cd4-916f-11e7-8045-dfae9ebcf648.jpg">
+</p>
+<p align="center">
+<img width="52" alt="Speed Limit 60km/h" src= "https://user-images.githubusercontent.com/28680734/30037384-2effea5c-916f-11e7-9ba9-3e856aab7553.jpg">
+</p>
 
-![alt text][image4] ![alt text][image5] ![alt text][image6]
-![alt text][image7] ![alt text][image8]
 
-The first image might be difficult to classify because ...
-
-####2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
+####2. The model was able to correctly guess 5 of the 5 traffic signs, which gives an accuracy of 100%. This compares favorably to the accuracy on the test set of 98.6%. 
 
 Here are the results of the prediction:
 
 | Image			        |     Prediction	        					|
 |:---------------------:|:---------------------------------------------:|
-| Stop Sign      		| Stop sign   									|
-| U-turn     			| U-turn 										|
-| Yield					| Yield											|
-| 100 km/h	      		| Bumpy Road					 				|
-| Slippery Road			| Slippery Road      							|
+| Priority Road       		| Priority Road   									|
+| Right of Wat at Next Intersection     			| Right of Wat at Next Intersection 										|
+| General Caution					| General Caution											|
+| Left Turn Ahead	      		| Left Turn Ahead					 				|
+| Speed Limit 60km/h			| Speed Limit 60km/h      							|
 
 
-The model was able to correctly guess 4 of the 5 traffic signs, which gives an accuracy of 80%. This compares favorably to the accuracy on the test set of ...
+
 
 ####3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. (OPTIONAL: as described in the "Stand Out Suggestions" part of the rubric, visualizations can also be provided such as bar charts)
 
@@ -166,11 +176,11 @@ For the first image, the model is relatively sure that this is a stop sign (prob
 
 | Probability         	|     Prediction	        					|
 |:---------------------:|:---------------------------------------------:|
-| .60         			| Stop sign   									|
-| .20     				| U-turn 										|
-| .05					| Yield											|
-| .04	      			| Bumpy Road					 				|
-| .01				    | Slippery Road      							|
+| 1.0         			| Priority Road   									|
+| 1.0     				| Right of Wat at Next Intersection 										|
+| 1.0					| General Caution											|
+| 1.0	      			| Left Turn Ahead					 				|
+| 1.0				    | Speed Limit 60km/h      							|
 
 
 
