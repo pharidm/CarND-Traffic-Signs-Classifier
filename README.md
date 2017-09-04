@@ -93,9 +93,8 @@ Distribution of Training Set Data
 
 </center>
 
-Improvements to this architecuture would have been to employ GoogleNet, but do to time contraints it was not considered.  Using Googlenet would have returned a high accuracy much faster than using 20 EPOCHs.
+####  3. A iterative approach was used to train the model starting with the basic LeNet architecture. 
 
-####  3. A iterative approach was used to train the model starting with the basic LeNet architecture.  
 ADAM optimizer was picked a good starting point to update the model network weights.  Instead of the classical stochastic gradient descent procedure to update network weights iterative based in training data. “Adam combines the best properties of the AdaGrad and RMSProp algorithms to provide an optimization algorithm that can handle sparse gradients on noisy problems.” [Reference Jason Brownlee] (https://machinelearningmastery.com/adam-optimization-algorithm-for-deep-learning/)
 
 My model returned results close to the required 0.93 accuracy on the first run with 10-15 EPOCHs.  An EPOCK is a single forward and backward pass of the whole dataset. This is used to increase the accuracy of the model without requiring more data. I increased the EPOCHs and played with the learning rate and dropout.
@@ -106,14 +105,16 @@ Reference: [A Simple Way to prevent Neural Networks from Overtraining] (http://w
 
 The key parameters of my model is as follows:
 
-EPOCHS     = 20
-BATCH_SIZE = 128
-keep_prob  = tf.placeholder(tf.float32)
-rate = 0.001
-dropout = 0.5
+* EPOCHS     = 20
+* BATCH_SIZE = 128
+* keep_prob  = tf.placeholder(tf.float32)
+* rate = 0.001
+* dropout = 0.5
 
 
-####4. A interative approach was used to train the model starting with the basic LeNet architecutureDescribe the approach taken for finding a solution and getting the validation set accuracy to be at least 0.93. Include in the discussion the results on the training, validation and test sets and where in the code these were calculated. Your approach may have been an iterative process, in which case, outline the steps you took to get to the final solution and why you chose those steps. Perhaps your solution involved an already well known implementation or architecture. In this case, discuss why you think the architecture is suitable for the current problem.
+####4. A interative approach was used to train the model starting with the basic LeNet architecuture. Improvements to this architecuture would have been to employ GoogleNet, but do to time contraints it was not considered.  Using Googlenet would have returned a high accuracy much faster than using 20 EPOCHs.  LeNet was choose becuase it was discussed in class to provide a good starting point and high level of accuracy without much modificaition.  Because we are implemeting a classical vision classication model on simple 
+
+Describe the approach taken for finding a solution and getting the validation set accuracy to be at least 0.93. Include in the discussion the results on the training, validation and test sets and where in the code these were calculated. Your approach may have been an iterative process, in which case, outline the steps you took to get to the final solution and why you chose those steps. Perhaps your solution involved an already well known implementation or architecture. In this case, discuss why you think the architecture is suitable for the current problem.
 
 My final model results were:
 * training set accuracy of ?
