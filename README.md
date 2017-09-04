@@ -160,7 +160,7 @@ Here are the results of the prediction:
 | Image			        |     Prediction	        					|
 |:---------------------:|:---------------------------------------------:|
 | Priority Road       		| Priority Road   									|
-| Right of Wat at Next Intersection     			| Right of Wat at Next Intersection 										|
+| Right of Way at Next Intersection     			| Right of Way at Next Intersection 										|
 | General Caution					| General Caution											|
 | Left Turn Ahead	      		| Left Turn Ahead					 				|
 | Speed Limit 60km/h			| Speed Limit 60km/h      							|
@@ -178,7 +178,7 @@ For the first image, the model is relatively sure that this is a stop sign (prob
 | Probability         	|     Prediction	        					|
 |:---------------------:|:---------------------------------------------:|
 | 1.0         			| Priority Road   									|
-| 1.0     				| Right of Wat at Next Intersection 										|
+| 1.0     				| Right of Way at Next Intersection 										|
 | 1.0					| General Caution											|
 | 1.0	      			| Left Turn Ahead					 				|
 | 1.0				    | Speed Limit 60km/h      							|
