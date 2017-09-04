@@ -111,14 +111,11 @@ The key parameters of my model is as follows:
 * rate = 0.001
 * dropout = 0.5
 
-
-####4. A interative approach was used to train the model starting with the basic LeNet architecuture. Improvements to this architecuture would have been to employ GoogleNet, but do to time contraints it was not considered.  Using Googlenet would have returned a high accuracy much faster than using 20 EPOCHs.  LeNet was choose becuase it was discussed in class to provide a good starting point and high level of accuracy without much modificaition.  Because we are implemeting a classical vision classication model on simple 
-
-Describe the approach taken for finding a solution and getting the validation set accuracy to be at least 0.93. Include in the discussion the results on the training, validation and test sets and where in the code these were calculated. Your approach may have been an iterative process, in which case, outline the steps you took to get to the final solution and why you chose those steps. Perhaps your solution involved an already well known implementation or architecture. In this case, discuss why you think the architecture is suitable for the current problem.
+####4. A iterative approach was used to train the model starting with the basic LeNet architecture. Improvements to this architecture would have been to employ GoogleNet, but due to time constraints it was not considered.  Using GoogleNet would have returned a high accuracy much faster than using 20 EPOCHs.  LeNet was choose because it was discussed in class to provide a good starting point and high level of accuracy without much modification.  Because we are implementing a classical vision system model on text book case of traffic signs, our LeNet architecture performed well.  Moving on to none basic classification problems, or pictures of low quality might need a more improved model.  
 
 My final model results were:
-* training set accuracy of ?
-* validation set accuracy of ?
+* Training set accuracy of ?
+* Validation set accuracy of 0.942
 * test set accuracy of ?
 
 If an iterative approach was chosen:
