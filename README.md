@@ -170,8 +170,10 @@ Here are the results of the prediction:
 
 #### 3. Looking at the softmax probabilities for the top 5 predictions, we see my model is accurate and able to predict german traffic signs using the input data provided.  
 
-The code for making predictions on my final model is located in the 19th cell of the Ipython notebook.
-
+The code for making predictions on my final model is located in the 19th cell of the Ipython notebook. 
+<p align="center">
+<img width="500" alt="softmax_code" src="https://user-images.githubusercontent.com/28680734/30524246-ce374cca-9ba4-11e7-8d06-b38ea47f5e0c.png">
+</p>
 For the first image, the model is relatively sure that this is a Priority Road Sign (probability of 1.0), and the image does contain a Priority Road Sign. The top five soft max probabilities were
 <p></p>
 
