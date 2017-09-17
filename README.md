@@ -168,11 +168,11 @@ Here are the results of the prediction:
 
 
 
-#### 3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. (OPTIONAL: as described in the "Stand Out Suggestions" part of the rubric, visualizations can also be provided such as bar charts)
+#### 3. Looking at the softmax probabilities for the top 5 predictions, we see my model is accurate and able to predict german traffic signs using the input data provided.  
 
-The code for making predictions on my final model is located in the 11th cell of the Ipython notebook.
+The code for making predictions on my final model is located in the 19th cell of the Ipython notebook.
 
-For the first image, the model is relatively sure that this is a stop sign (probability of 0.6), and the image does contain a stop sign. The top five soft max probabilities were
+For the first image, the model is relatively sure that this is a Priority Road Sign (probability of 1.0), and the image does contain a Priority Road Sign. The top five soft max probabilities were
 <p></p>
 
 | Probability         	|     Prediction	        					|
@@ -182,7 +182,6 @@ For the first image, the model is relatively sure that this is a stop sign (prob
 | 1.0					| General Caution											|
 | 1.0	      			| Left Turn Ahead					 				|
 | 1.0				    | Speed Limit 60km/h      							|
-
 
 
 
