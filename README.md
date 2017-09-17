@@ -185,5 +185,7 @@ For the first image, the model is relatively sure that this is a Priority Road S
 | 1.0	      			| Left Turn Ahead					 				|
 | 1.0				    | Speed Limit 60km/h      							|
 
-
+<p align="center">
+<img width="500" alt="softmax_prop_graph" src="https://user-images.githubusercontent.com/28680734/30524271-666bf414-9ba5-11e7-9d39-85c15a888afa.png">
+</p>
 
